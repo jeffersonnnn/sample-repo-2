@@ -1,14 +1,18 @@
 # Sidebar navigation
 
-- label: 'Introduction'
+- label: 'Overview'
   link: '/'
-- label: 'Getting started'
-  link: '/getting-started'
-- label: Usage
+- label: 'Register and Get API keys'
+  link: '/getting-started/register'
+- label: Recieve Payments
   items:
-    - label: 'Creating docs'
-      link: '/usage/creating-docs'
-    - label: 'Navigation'
-      link: '/usage/navigation'
-    - label: 'Shadowing'
-      link: '/usage/shadowing'
+    - label: 'Ways to Receive Payments'
+      link: '/R-Payments/remita-inline'
+    # - label: 'Navigation'
+    #   link: '/usage/navigation'
+    # - label: 'Shadowing'
+    #   link: '/usage/shadowing'
+- label: Make Payments
+  items:
+    - label: 'Ways to Make Payments'
+      link: '/M-Payments/make-payments'

@@ -1,0 +1,77 @@
+---
+title: Receive Payments
+---
+
+## Remita Inline
+
+The Remita Inline Checkout is our iframe checkout option which displays a secure payment form(See bash console below) as an overlay on your checkout page. This makes it ideal for use with shopping cart applications or your own custom checkout process. You can use the code snippet below and download the js file here.
+
+
+
+### Example:
+
+```js lineNumbers=true
+<form >
+ <script src="http://www.remitademo.net/payment/v1/remita-pay-inline.bundle.js"></script>
+  <button type="button" onclick="makePayment()"> Pay </button>
+		</form>
+			  <script>
+				function makePayment() {
+				  var paymentEngine = RmPaymentEngine.init({
+	  		          key: ‘public key’',
+  		              customerId: "140700251",
+					  firstName: "Lisa",
+					  lastName: "Spark",
+					  email: "demo@remita.net",
+					  narration: "Payment Description",
+					  amount: 19999,
+					  onSuccess: function (response) {
+					    console.log('callback Successful Response', response);
+					  },
+					  onError: function (response) {
+					    console.log('callback Error Response', response);
+					  },
+					     onClose: function () {
+					    console.log("closed");
+					  }
+					    });
+					      paymentEngine.showPaymentWidget();
+					  }
+			  </script>
+```
+
+
+
+## eCommerce Plugins
+
+You have access to a whole library of plugins on Remita to make your eCommerce integrations to the platform easier. You can download any one of your choice from the list below to start.
+
+  + [Open Cart](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=22787)  
+  + [WordPress](https://wordpress.org/plugins/remita-payment-gateway/)          
+  + [OpenCart](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=22787)
+  + [Magneto](https://github.com/RemitaNet/remita-magento-2.x)
+  + [Easy Digital Downloads](https://wordpress.org/plugins/remita-payment-gateway-for-easy-digital-downloads/)
+
+
+
+## Mobile SDKs
+
+You can integrate your mobile app to remita for your customers to pay you. Find options below for your implementation.
+
+  + Andriod SDK
+  + iOS SDK
+
+
+
+## Part Payments
+
+The Remita Part Payment feature enables you to get paid in parts until payment is complete for the products/services you offer. This means you can decide to receive payments from your customers in instalments using the methods in this API.
+
+Note
+
+  + An RRR or Remita Retrival Reference is your Payment Reference
+  + Base URL for Sandbox Environment is http://www.remitademo.net
+  + You would have validated teh value of the RRR using the Get Status API after which you will use this API to inform us of a part payment to that
+  + Click to download more detailed documentation including- Description to Fields, Error Codes and Bank Codes, etc.
+
+
