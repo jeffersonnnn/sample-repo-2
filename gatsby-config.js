@@ -1,16 +1,16 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `@rocketseat/gatsby-theme-docs`,
-    defaultTitle: `@rocketseat/gatsby-theme-docs`,
-    siteTitleShort: `gatsby-theme-docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
-    siteUrl: `https://rocketdocs.netlify.com`,
-    siteAuthor: `@rocketseat`,
+    siteTitle: `Remita Developer Documentation`,
+    defaultTitle: `Remita Developer Documentation`,
+    siteTitleShort: `Remita Developer Documentation`,
+    siteDescription: `Welcome to the Remita Developer Documentation where you’ll learn how to build amazing payment experiences with the Remita API.`,
+    siteUrl: `https://remita.net`,
+    siteAuthor: `Remita`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
-    themeColor: `#7159c1`,
+    themeColor: `#C25325`,
     basePath: `/`,
-    footer: `Theme by Rocketseat`,
+    footer: `Write your apps, faster, with Remita.`,
   },
   plugins: [
     {
@@ -18,7 +18,7 @@ module.exports = {
       options: {
         configPath: `src/config`,
         docsPath: `src/docs`,
-        githubUrl: `https://github.com/rocketseat/gatsby-themes`,
+        githubUrl: `https://github.com/jeffersonnnn/sample-repo-2`,
         baseDir: `examples/gatsby-theme-docs`,
       },
     },
@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://rocketdocs.netlify.com`,
+        siteUrl: `https://remita.com/developers`,
       },
     },
     `gatsby-plugin-offline`,

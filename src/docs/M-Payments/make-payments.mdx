@@ -1,0 +1,48 @@
+---
+title: Way to Make Payments
+---
+
+
+
+## Single Debit Single Credit
+
+Remita, through its Payment Gateway APIs, offers a shared services platform for you to be able to complete different kinds of payment instructions. One of these is the Single Debit, Multiple Credit payment; otherwise known as fund transfers. The APIs below will enable you debit your account to credit a sole beneficiary in any bank.
+
+Note
+
+ + An RRR or Remita Retrival Reference is your Payment Reference
+ + Base URL for Sandbox Environment is http://www.remitademo.net
+ + Prior to making payments via integration, you will need to register the accounts from which you will be making payments on Remita. You can do that from logging in to your Remita profile and adding bank accounts or by clicking here for our Add Account API
+ + You will need to encrypt all sensitive payment data with AES 128 bit encryption
+ + Click to download more detailed documentation including- Description to Fields, Error Codes and Bank Codes, etc.
+
+
+
+## Single Debit Multiple Credit
+
+You can make payments to several beneficiaries in many banks at the same time (Salary payments for example) using the Single Debit Multiple Credit (otherwise known as Bulk Payment) API. You can track the progress of the payments into the beneficiary accounts using the Status Enquiry API.
+
+Note
+
+ + An RRR or Remita Retrival Reference is your Payment Reference
+ + Base URL for Sandbox Environment is http://www.remitademo.net
+ + Prior to making payments via integration, you will need to register the accounts from which you will be making payments on Remita. You can do that from logging in to your Remita profile and adding bank accounts or by clicking here for our Add Account API
+ + You will need to encrypt all sensitive payment data with AES 128 bit encryption
+ + Click to download more detailed documentation including- Description to Fields, Error Codes and Bank Codes, etc.
+
+
+
+## Funds Transfer Plugin
+
+The Remita Funds Transfer Plugin is an all-inclusive tool that offers the option to directly transmit payments off of your transactional database(s) to designated beneficiaries across all banks. You get started by installing the client locally on your environment and configuring it to interact with your database to send payments to Remita for processing. You can download the plugin installation files here.
+
+
+
+## Standing Order
+
+You can make recurrent payments to your billers, vendors, family members and friends at regular intervals by setting up a standing order mandate with this API. When you activate the mandate, Remita automatically debits your account and credits the specified beneficiary across any bank at the intervals you have indicated.
+
+ + Base URL for Sandbox Environment is http://www.remitademo.net
+ + Hashing is done using SHA512 algorithm
+ + See Appendix below for Description to Fields, Error Codes and Bank Codes
+ + Click to download more detailed documentation including- Description to Fields, Error Codes and Bank Codes, etc.
