@@ -1,0 +1,52 @@
+---
+title: Remita Inter-Bank Transfer Service
+---
+
+## Overview
+
+The RemitaInterbank Transfer Service(RITS) is asharedservices platform offered by SystemSpecs to integrating partners (PSPs, Payment aggregators, portal providers, banks etc) in the retail and bulk payments space. 
+These services, amongst others, include:
+
+ + Payments (Single payment & Bulk payments) 
+ + Account Enquiry
+ + Payments Status Enquiry 
+and 
+ + Bank Enquiry
+
+
+In implementing the RITS for integration, SystemSpecs has provided a standards-based REST interface, which enables application developers to interact in a powerful, yet secure way with Remita for the purpose of payment processing. This document specifies the requirements for integrating to the Remita Interbank Transfer Service.
+
+A full implementation of the API methods in the following segments will enable your payers seamlessly transfer funds to your account, facilitate your payments (as a merchant) to multiple beneficiaries at once, query the platform for the status of payments made.
+
+
+
+## Get started with RITS
+
+The workflow to getting started on RITS is as follows:
+
+ + Register a profile on Remita: You can visit [www.remita.net](www.remita.net) to sign-up if you are not already registered as a merchant/biller on the platform.
+
+ + Receive the Remita log in credentials that certify you as a Biller:
+
+ + After signing up on Remita, the next segment will begin to outline methods of SystemSpecs’ RITS API in detail to show how this is done. Upon completion of this RITS integration and successful UAT, your live credentials will be shared with you.
+
+
+All API parameters should be encrypted with AES 256 Algorithm using the shared keys. This value should be protected at all times and should not be shared. See Appendix A for more information on AES encryption. All API responses are formatted using JSend. (JSend is a specification that specifies how JSON responses	from web servers	should	be	formatted.	For	more	information	see https://labs.omniti.com/labs/jsend)
+
+A success status responsefrom the API call means that all went well and (usually) some data was returned. You should check the content of the data returned for the service response typically denoted by “responseCode”. You need to combine the base URL with appropriate endpoint URI, payloads and HTTP headers to make a call.
+
+ + Test Environment Base URL: https://remitademo.net/remita/exapp/api/v1/send/api/rpgsvc 
+ + Live Environment Base URL: https://login.remita.net/remita/exapp/api/v1/send/api/rpgsvc/rpg
+
+Developer Reference: For the successful implementation of this service; kindly visit the link below for the Software Development Kit (SDK) and the postman collection link to test the endpoints on postman. 
+https://github.com/RemitaNet
+
+
+
+## Postman Collection
+
+https://www.getpostman.com/collections/3cc5a6d27a53de94d557
+
+(Note, if you want to see how this works right now, please install the Postman Chrome extension. How this can done is detailed in the Section Overview page)
+
+
