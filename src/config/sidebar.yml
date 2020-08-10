@@ -8,7 +8,7 @@
   items:
     - label: 'Ways to Receive Payments'
       link: '/R-Payments/remita-inline'
-    # - label: 'Navigation'
+    # - label: 'Test'
     #   link: '/usage/navigation'
     # - label: 'Shadowing'
     #   link: '/usage/shadowing'
@@ -16,3 +16,11 @@
   items:
     - label: 'Ways to Make Payments'
       link: '/M-Payments/make-payments'
+- label: API Docs
+  items:
+    - label: 'Section Overview'
+      link: '/API-docs/section-overview' 
+    - label: 'Remita InterBank Transfer Service'
+      link: '/API-docs/RITS'
+    - label: 'Biller API'
+      link: '/API-docs/biller-api'               

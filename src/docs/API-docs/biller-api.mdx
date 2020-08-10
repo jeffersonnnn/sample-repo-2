@@ -1,0 +1,40 @@
+---
+title: Biller API
+---
+
+## Overview
+Integrating to Remita for Biller payments enables your customers make payments to billers on Remita through your platform. This provides you with the capability to offer your customers access to the vast array of billers and merchants, including schools, churches, service providers and the Federal Government ministries, departments and agencies (MDAs) available on Remita to purchase and subscribe to their various products and services.
+
+The process involves your customers selecting a biller to pay via your platform. They will supply payment details and confirm the details so you can debit their account with AmountDue to credit a designated Funds Holding Account. Your customers will be emailed Remita receipts (which are FGN MDA-recognized for TSA-bound payments) for each transaction.
+
+
+
+## Getting Started with Biller API
+
+This document describes the methods offered by the application programming interfaces (APIs) through which SystemSpecs’ partners can integrate to Remita for facilitating customer payments to billers on their platform. These include:
+
+
+ + Get Biller List
+ + Get Service Type List 
+ + Get Custom Field List 
+ + Validate Request
+ + Generate Remita Retrieval Reference (RRR) 
+ + Remita Retrieval Reference (RRR) Lookup 
+ + Bill Payments Notification
+ + Payment Status 
+ + Payment Receipt
+
+
+The Base URLs to the endpoints are outlined below (you can find the method snippets at the following segments):
+
+ + Sandbox URL: https://remitademo.net/remita/exapp/api/v1/send/api/bgatesvc/billing         
+ + Live URL: https://login.remita.net/remita/exapp/api/v1/send/api/echannelsvc/echannel
+
+
+## Postman Collection
+
+Biller API postman collection
+
+https://www.getpostman.com/collections/0ae53f77b44517919782
+
+(Note, if you want to see how this works right now, please install the Postman Chrome extension. How this can done is detailed in the Section Overview page)
